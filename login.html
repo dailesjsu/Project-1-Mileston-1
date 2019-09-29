@@ -1,0 +1,15 @@
+{% extends "base_project.html" %}
+{% block content%}
+<BODY>
+    <h1> <font size="14">Moni mee!</font></h1>
+<h1> Welcome {{homen}}, We are here to help you balance your finance !</h1>
+<form action = \"http://127.0.0.1:5000\" method = \"POST\">
+<p>username:  <input type = \"text\" name = \"user name\" /></p>
+<p>password <input type = \"text\" name = \"pass word\" /></p>
+<p> Log in <input type = "submit" value = "Log In" /></p>
+<p> Are you a new customer? If yes, please register below. </p>
+    <p> Register <input type = "submit" value = "Click here" /></p>
+</form>
+</BODY>
+    {% endblock%}
+ 
