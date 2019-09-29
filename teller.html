@@ -1,0 +1,39 @@
+<html>
+  <head>
+  	<title>Teller</title>
+  	<link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+ 
+      function drawChart() {
+ 
+        var data = google.visualization.arrayToDataTable([
+          ['Clothing', 'Hours per Day'],
+          ['Utility bills',     11],
+          ['Food',      2],
+          ['Entertainment',  2],
+          ['Cars', 2],
+          ['Debt',    7]
+        ]);
+ 
+        var options = {
+          title: 'your monthly report'
+        };
+ 
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+ 
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  <div class="advice">
+  <h1>Advice</h1>
+  <p>stop spending money!</p>
+  <p> you don't need that extra slice</p>
+  </div>
+  </body>
+</html>
