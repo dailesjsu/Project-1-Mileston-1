@@ -1,0 +1,15 @@
+{% extends "base_project.html" %}
+{% block content%}
+<BODY>
+    <h1> <font size="14">Cash Course!</font></h1>
+<h1> Welcome {{homen}},Please enter your income !</h1>
+<form action = \"http://127.0.0.1:5000\income" method = \"POST\">
+<p>Financial aid:  <input type = \"text\" name = \"aid\" /></p>
+<p>Family help: <input type = \"text\" name = \"famly help\" /></p>
+<p>Goverment help: <input type = \"text\" name = \"goverment help\" /></p>
+<p>Salary: <input type = \"text\" name = \"Salary\" /></p>
+<p>Others: <input type = \"text\" name = \"other\" /></p>
+<a href="http://127.0.0.1:5000/afterlogin">Submit</a>
+</form>
+</BODY>
+    {% endblock%}
